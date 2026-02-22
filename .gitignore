@@ -1,0 +1,17 @@
+# Build output
+/bin/
+/build/
+/out/
+/target/
+
+# Eclipse / misc workspace noise
+.settings/
+*.class
+*.log
+.DS_Store
+
+# Day 1 gate: ignore future source placeholders and planned data files for now
+/src/**/*.placeholder
+/*.txt.placeholder
+
+# Uncomment / narrow these rules later as real files are promoted into the repo
