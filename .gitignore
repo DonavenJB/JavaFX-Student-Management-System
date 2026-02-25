@@ -1,17 +1,23 @@
-# Build output
-/bin/
-/build/
-/out/
-/target/
+# Eclipse / Java build output
+bin/
+build/
+out/
+target/
 
-# Eclipse / misc workspace noise
+# Eclipse metadata
 .settings/
-*.class
-*.log
+
+# OS / logs
 .DS_Store
+Thumbs.db
+*.log
 
-# Day 1 gate: ignore future source placeholders and planned data files for now
-/src/**/*.placeholder
-/*.txt.placeholder
+# Compiled Java
+*.class
 
-# Uncomment / narrow these rules later as real files are promoted into the repo
+# Local runtime data files
+students.txt
+courses.txt
+departments.txt
+instructors.txt
+enrollments.txt
