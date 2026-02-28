@@ -4,9 +4,9 @@ Student Management Program is a JavaFX desktop application for managing academic
 
 ## Overview
 
-The application is being built as a modular desktop system with clear package separation for:
+The application is structured as a modular desktop system with clear package separation for:
 
-- application bootstrap and shared context
+- application bootstrap and shared runtime context
 - domain models
 - file-based persistence handlers
 - JavaFX user interface modules
@@ -40,6 +40,7 @@ StudentManagementProgram/
 │   └── studentmanagement/
 │       └── app/
 │           ├── AppBootstrap.java
+│           ├── AppContext.java
 │           └── Main.java
 ├── .classpath
 ├── .gitignore
@@ -56,4 +57,4 @@ StudentManagementProgram/
 
 ## Notes
 
-This repository uses standard package-based organization and is intended to grow into a full desktop student information system with separate modules for data management, reporting, and validation.
+This repository follows a package-based organization and is intended to grow into a full desktop student information system with separate modules for data management, reporting, and validation.

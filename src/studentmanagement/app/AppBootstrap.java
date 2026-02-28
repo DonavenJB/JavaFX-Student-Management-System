@@ -11,13 +11,13 @@ public final class AppBootstrap {
     private AppBootstrap() {
     }
 
-    public static void initialize() {
-        System.out.println("Bootstrapping Student Management Program...");
-        System.out.println("Configured data files:");
-        System.out.println(" - " + STUDENTS_FILE);
-        System.out.println(" - " + COURSES_FILE);
-        System.out.println(" - " + DEPARTMENTS_FILE);
-        System.out.println(" - " + INSTRUCTORS_FILE);
-        System.out.println(" - " + ENROLLMENTS_FILE);
+    public static AppContext initialize() {
+        return new AppContext(
+            STUDENTS_FILE,
+            COURSES_FILE,
+            DEPARTMENTS_FILE,
+            INSTRUCTORS_FILE,
+            ENROLLMENTS_FILE
+        );
     }
 }

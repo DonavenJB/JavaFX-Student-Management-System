@@ -14,7 +14,7 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        AppBootstrap.initialize();
+        AppContext appContext = AppBootstrap.initialize();
 
         BorderPane borderPane = new BorderPane();
         borderPane.setCenter(new Label("Student Management Application!"));
@@ -24,5 +24,12 @@ public class Main extends Application {
         primaryStage.setTitle("Student Management Program");
         primaryStage.setScene(scene);
         primaryStage.show();
+
+        System.out.println("Configured data files:");
+        System.out.println(" - " + appContext.getStudentsFile());
+        System.out.println(" - " + appContext.getCoursesFile());
+        System.out.println(" - " + appContext.getDepartmentsFile());
+        System.out.println(" - " + appContext.getInstructorsFile());
+        System.out.println(" - " + appContext.getEnrollmentsFile());
     }
 }
