@@ -20,6 +20,9 @@ public final class AppWindowLauncher {
         BorderPane borderPane = new BorderPane();
         borderPane.setCenter(new Label(DEFAULT_CENTER_TEXT));
 
+        MainMenuFactory.MenuBundle menuBundle = MainMenuFactory.build();
+        borderPane.setTop(menuBundle.getMenuBar());
+
         Scene scene = new Scene(borderPane, WINDOW_WIDTH, WINDOW_HEIGHT);
 
         primaryStage.setTitle(WINDOW_TITLE);

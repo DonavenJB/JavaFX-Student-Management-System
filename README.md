@@ -8,6 +8,7 @@ The application is structured as a modular desktop system with clear package sep
 
 - application bootstrap and shared runtime context
 - window launching and shell-level UI
+- top-level menu construction and navigation scaffolding
 - domain models
 - file-based persistence handlers
 - JavaFX feature modules
@@ -45,7 +46,8 @@ StudentManagementProgram/
 │       │   └── Main.java
 │       └── ui/
 │           └── shell/
-│               └── AppWindowLauncher.java
+│               ├── AppWindowLauncher.java
+│               └── MainMenuFactory.java
 ├── .classpath
 ├── .gitignore
 ├── .project
