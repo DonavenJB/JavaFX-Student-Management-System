@@ -23,6 +23,8 @@ public final class AppWindowLauncher {
         MainMenuFactory.MenuBundle menuBundle = MainMenuFactory.build();
         borderPane.setTop(menuBundle.getMenuBar());
 
+        MainMenuController.bind(primaryStage, borderPane, appContext, menuBundle);
+
         Scene scene = new Scene(borderPane, WINDOW_WIDTH, WINDOW_HEIGHT);
 
         primaryStage.setTitle(WINDOW_TITLE);

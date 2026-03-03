@@ -8,7 +8,7 @@ The application is structured as a modular desktop system with clear package sep
 
 - application bootstrap and shared runtime context
 - window launching and shell-level UI
-- top-level menu construction and navigation scaffolding
+- top-level menu construction and shell-level navigation wiring
 - domain models
 - file-based persistence handlers
 - JavaFX feature modules
