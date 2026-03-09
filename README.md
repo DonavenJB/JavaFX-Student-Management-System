@@ -10,13 +10,15 @@ The application is structured as a modular desktop system with clear package sep
 - window launching and shell-level UI
 - top-level menu construction and shell-level navigation wiring
 - custom collection support for in-memory catalogs
-- domain models
+- domain models for academic records
 - file-based persistence handlers
 - JavaFX feature modules
 - reporting
 - service integrations
 
 The long-term goal is to provide a clean desktop experience for managing and reviewing academic data from a single application window.
+
+This stage adds the first domain-model classes for student and department records, establishing the foundation for later persistence and feature-specific CRUD workflows.
 
 ## Planned Functional Areas
 
@@ -47,9 +49,13 @@ StudentManagementProgram/
 │       │   └── Main.java
 │       ├── collection/
 │       │   └── MyGenericList.java
+│       ├── model/
+│       │   ├── Department.java
+│       │   └── Student.java
 │       └── ui/
 │           └── shell/
 │               ├── AppWindowLauncher.java
+│               ├── MainMenuController.java
 │               └── MainMenuFactory.java
 ├── .classpath
 ├── .gitignore
