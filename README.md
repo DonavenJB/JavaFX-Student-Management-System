@@ -18,7 +18,7 @@ The application is structured as a modular desktop system with clear package sep
 
 The long-term goal is to provide a clean desktop experience for managing and reviewing academic data from a single application window.
 
-This stage adds the first domain-model classes for student and department records, establishing the foundation for later persistence and feature-specific CRUD workflows.
+This stage expands the domain model with instructor and course records, continuing the foundation for later persistence handlers, relationships, and feature-specific CRUD workflows.
 
 ## Planned Functional Areas
 
@@ -50,7 +50,9 @@ StudentManagementProgram/
 │       ├── collection/
 │       │   └── MyGenericList.java
 │       ├── model/
+│       │   ├── Course.java
 │       │   ├── Department.java
+│       │   ├── Instructor.java
 │       │   └── Student.java
 │       └── ui/
 │           └── shell/
