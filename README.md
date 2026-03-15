@@ -18,7 +18,18 @@ The application is structured as a modular desktop system with clear package sep
 
 The long-term goal is to provide a clean desktop experience for managing and reviewing academic data from a single application window.
 
-This stage expands the domain model with enrollment and report records, completing the initial set of core academic entities used throughout the application.
+## Current Foundation
+
+The current version includes:
+
+- application startup flow
+- shared application context
+- JavaFX shell launcher
+- top-level menu factory and shell controller
+- custom generic list collection
+- core domain models for students, departments, instructors, courses, enrollments, and reports
+
+This stage establishes the application's early architecture before the persistence layer, shared UI helpers, CRUD feature modules, reporting screens, and service integrations are added.
 
 ## Planned Functional Areas
 

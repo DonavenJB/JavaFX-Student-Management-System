@@ -1,8 +1,0 @@
-Import steps:
-1. Unzip this folder to your desktop.
-2. Open Eclipse.
-3. File > Import > Existing Projects into Workspace.
-4. Select the StudentManagementProgram folder.
-5. Finish.
-
-This Day 1 repo is intentionally a scaffold. The source placeholders are non-Java placeholder files and are ignored by Git for the initial push.

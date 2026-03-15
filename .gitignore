@@ -21,3 +21,6 @@ courses.txt
 departments.txt
 instructors.txt
 enrollments.txt
+
+# Local staging artifacts
+*.placeholder
