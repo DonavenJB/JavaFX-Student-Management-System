@@ -28,6 +28,7 @@ The current version includes:
 - top-level menu factory and shell controller
 - custom generic list collection
 - core domain models for students, departments, instructors, courses, enrollments, and reports
+- foundational handler contract for persistence operations
 
 This stage establishes the application's early architecture before the persistence layer, shared UI helpers, CRUD feature modules, reporting screens, and service integrations are added.
 
@@ -60,6 +61,8 @@ StudentManagementProgram/
 │       │   └── Main.java
 │       ├── collection/
 │       │   └── MyGenericList.java
+│       ├── handler/
+│       │   └── EntityHandler.java
 │       ├── model/
 │       │   ├── Course.java
 │       │   ├── Department.java
