@@ -29,8 +29,9 @@ The current version includes:
 - custom generic list collection
 - core domain models for students, departments, instructors, courses, enrollments, and reports
 - foundational handler contract for persistence operations
+- student and department persistence handlers for flat-file loading and saving
 
-This stage establishes the application's early architecture before the persistence layer, shared UI helpers, CRUD feature modules, reporting screens, and service integrations are added.
+This stage expands the persistence layer with the first concrete handlers while keeping the broader CRUD feature modules, reporting screens, shared UI helpers, and service integrations for later pushes.
 
 ## Planned Functional Areas
 
