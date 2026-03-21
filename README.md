@@ -29,9 +29,9 @@ The current version includes:
 - custom generic list collection
 - core domain models for students, departments, instructors, courses, enrollments, and reports
 - foundational handler contract for persistence operations
-- student, department, instructor, and course persistence handlers for flat-file loading and saving
+- student, department, instructor, course, and enrollment persistence handlers for flat-file loading and saving
 
-This stage expands the persistence layer across the core academic entities while keeping the broader CRUD feature modules, reporting screens, shared UI helpers, and service integrations for later pushes.
+This stage completes the first full pass of the flat-file persistence layer across the core academic entities while keeping the broader CRUD feature modules, reporting screens, shared UI helpers, and service integrations for later pushes.
 
 ## Planned Functional Areas
 
@@ -67,7 +67,8 @@ StudentManagementProgram/
 │       │   ├── DepartmentHandler.java
 │       │   ├── EntityHandler.java
 │       │   ├── InstructorHandler.java
-│       │   └── StudentHandler.java
+│       │   ├── StudentHandler.java
+│       │   └── EnrollmentHandler.java
 │       ├── model/
 │       │   ├── Course.java
 │       │   ├── Department.java
