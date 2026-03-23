@@ -1,99 +1,50 @@
 # Student Management Program
 
-Student Management Program is a JavaFX desktop application for managing academic records through a menu-driven interface. The project is organized around core university-style entities such as students, departments, instructors, courses, and enrollments, with support for reporting and data validation workflows.
+A JavaFX-based desktop application for managing students, departments, instructors, courses, enrollments, and academic reports.
 
-## Overview
+## Current Project State
 
-The application is structured as a modular desktop system with clear package separation for:
+The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, and the initial JavaFX shell.
 
-- application bootstrap and shared runtime context
-- window launching and shell-level UI
-- top-level menu construction and shell-level navigation wiring
-- custom collection support for in-memory catalogs
-- domain models for academic records
-- file-based persistence handlers
-- JavaFX feature modules
-- reporting
-- service integrations
+## Current Package Layout
 
-The long-term goal is to provide a clean desktop experience for managing and reviewing academic data from a single application window.
+- `studentmanagement.app`
+  - `Main.java`
+  - `AppBootstrap.java`
+  - `AppContext.java`
+- `studentmanagement.collection`
+  - `MyGenericList.java`
+- `studentmanagement.handler`
+  - `EntityHandler.java`
+  - `StudentHandler.java`
+  - `DepartmentHandler.java`
+  - `InstructorHandler.java`
+  - `CourseHandler.java`
+  - `EnrollmentHandler.java`
+- `studentmanagement.model`
+  - `Student.java`
+  - `Department.java`
+  - `Instructor.java`
+  - `Course.java`
+  - `Enrollment.java`
+  - `Report.java`
+- `studentmanagement.ui.shell`
+  - `AppWindowLauncher.java`
+  - `MainMenuFactory.java`
+  - `MainMenuController.java`
 
-## Current Foundation
+## Current Architecture Notes
 
-The current version includes:
+- `Main` starts the JavaFX application.
+- `AppBootstrap` creates the handlers, loads the flat-file catalogs, and returns a shared `AppContext`.
+- `AppContext` stores file names, loaded catalogs, and handler instances for the UI layer.
+- `MyGenericList` is the current custom generic list used for in-memory catalog storage.
+- The handler layer provides flat-file loading and saving for the current entity set.
+- The shell package currently provides the application window and menu structure.
 
-- application startup flow
-- shared application context
-- JavaFX shell launcher
-- top-level menu factory and shell controller
-- custom generic list collection
-- core domain models for students, departments, instructors, courses, enrollments, and reports
-- foundational handler contract for persistence operations
-- student, department, instructor, course, and enrollment persistence handlers for flat-file loading and saving
-
-This stage completes the first full pass of the flat-file persistence layer across the core academic entities while keeping the broader CRUD feature modules, reporting screens, shared UI helpers, and service integrations for later pushes.
-
-## Planned Functional Areas
-
-- Student management
-- Department management
-- Instructor management
-- Course management
-- Enrollment management
-- Academic reports
-- ZIP-based location lookup for student records
-
-## Technology
+## Dependencies
 
 - Java
 - JavaFX
-- Gson
-- Eclipse project structure
 
-## Project Layout
-
-```text
-StudentManagementProgram/
-├── src/
-│   └── studentmanagement/
-│       ├── app/
-│       │   ├── AppBootstrap.java
-│       │   ├── AppContext.java
-│       │   └── Main.java
-│       ├── collection/
-│       │   └── MyGenericList.java
-│       ├── handler/
-│       │   ├── CourseHandler.java
-│       │   ├── DepartmentHandler.java
-│       │   ├── EntityHandler.java
-│       │   ├── InstructorHandler.java
-│       │   ├── StudentHandler.java
-│       │   └── EnrollmentHandler.java
-│       ├── model/
-│       │   ├── Course.java
-│       │   ├── Department.java
-│       │   ├── Enrollment.java
-│       │   ├── Instructor.java
-│       │   ├── Report.java
-│       │   └── Student.java
-│       └── ui/
-│           └── shell/
-│               ├── AppWindowLauncher.java
-│               ├── MainMenuController.java
-│               └── MainMenuFactory.java
-├── .classpath
-├── .gitignore
-├── .project
-├── DEPENDENCIES.md
-└── README.md
-```
-
-## Running in Eclipse
-
-1. Import the folder as an existing Eclipse project.
-2. Add the JavaFX SDK to the project build path or module path.
-3. Run `studentmanagement.app.Main` as a JavaFX application.
-
-## Notes
-
-This repository follows a package-based organization and is intended to grow into a full desktop student information system with separate modules for data management, reporting, and validation.
+Additional libraries and runtime notes are documented in `DEPENDENCIES.md`.
