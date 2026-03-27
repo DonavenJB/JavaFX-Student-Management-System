@@ -4,7 +4,7 @@ A JavaFX-based desktop application for managing students, departments, instructo
 
 ## Current Project State
 
-The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, the initial JavaFX shell, and the shared UI utility classes needed for upcoming feature screens.
+The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, the initial JavaFX shell, shared UI utility classes, and the first department feature screens.
 
 ## Current Package Layout
 
@@ -32,6 +32,9 @@ The repository currently includes the application bootstrap flow, shared runtime
   - `AlertUtils.java`
   - `LayoutFactory.java`
   - `FormUtils.java`
+- `studentmanagement.ui.department`
+  - `DepartmentCreateView.java`
+  - `DepartmentShowView.java`
 - `studentmanagement.ui.shell`
   - `AppWindowLauncher.java`
   - `MainMenuFactory.java`
@@ -44,7 +47,8 @@ The repository currently includes the application bootstrap flow, shared runtime
 - `AppContext` stores file names, loaded catalogs, and handler instances for the UI layer.
 - `MyGenericList` is the current custom generic list used for in-memory catalog storage.
 - The handler layer provides flat-file loading and saving for the current entity set.
-- The shared UI utility package now provides alert, layout, and form helpers for upcoming feature modules.
+- The shared UI utility package provides alert, layout, and form helpers.
+- The department package now includes the first create and display workflows.
 - The shell package currently provides the application window and menu structure.
 
 ## Dependencies
