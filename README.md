@@ -35,6 +35,9 @@ The repository currently includes the application bootstrap flow, shared runtime
 - `studentmanagement.ui.department`
   - `DepartmentCreateView.java`
   - `DepartmentShowView.java`
+  - `DepartmentEditView.java`
+  - `DepartmentFormSupport.java`
+  - `DepartmentUI.java`
 - `studentmanagement.ui.shell`
   - `AppWindowLauncher.java`
   - `MainMenuFactory.java`
@@ -48,7 +51,7 @@ The repository currently includes the application bootstrap flow, shared runtime
 - `MyGenericList` is the current custom generic list used for in-memory catalog storage.
 - The handler layer provides flat-file loading and saving for the current entity set.
 - The shared UI utility package provides alert, layout, and form helpers.
-- The department package now includes the first create and display workflows.
+- The department package now includes create, display, and edit workflows plus shared form support.
 - The shell package currently provides the application window and menu structure.
 
 ## Dependencies
