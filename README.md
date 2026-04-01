@@ -4,7 +4,7 @@ A JavaFX-based desktop application for managing students, departments, instructo
 
 ## Current Project State
 
-The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, the initial JavaFX shell, shared UI utility classes, the full first-pass department feature set, the full first-pass instructor feature set, and the initial course feature workflow.
+The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, the initial JavaFX shell, shared UI utility classes, the full first-pass department feature set, the full first-pass instructor feature set, and the full first-pass course feature set.
 
 ## Current Package Layout
 
@@ -47,6 +47,9 @@ The repository currently includes the application bootstrap flow, shared runtime
 - `studentmanagement.ui.course`
   - `CourseFormSupport.java`
   - `CourseCreateView.java`
+  - `CourseEditView.java`
+  - `CourseShowView.java`
+  - `CourseUI.java`
 - `studentmanagement.ui.shell`
   - `AppWindowLauncher.java`
   - `MainMenuFactory.java`
@@ -62,7 +65,7 @@ The repository currently includes the application bootstrap flow, shared runtime
 - The shared UI utility package provides alert, layout, and form helpers.
 - The department package now includes create, display, and edit workflows plus shared form support.
 - The instructor package now includes create, display, and edit workflows plus shared form support.
-- The course package now includes form support and the initial create workflow.
+- The course package now includes create, display, and edit workflows plus shared form support.
 - The shell package currently provides the application window and menu structure.
 
 ## Dependencies
