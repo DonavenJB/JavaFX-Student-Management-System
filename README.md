@@ -4,7 +4,7 @@ A JavaFX-based desktop application for managing students, departments, instructo
 
 ## Current Project State
 
-The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, the initial JavaFX shell, shared UI utility classes, the full first-pass department feature set, the full first-pass instructor feature set, the full first-pass course feature set, the ZIP lookup service, and the first student support helper layer.
+The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, the initial JavaFX shell, shared UI utility classes, the full first-pass department feature set, the full first-pass instructor feature set, the full first-pass course feature set, the ZIP lookup service, and the full first-pass student feature set.
 
 ## Current Package Layout
 
@@ -54,6 +54,10 @@ The repository currently includes the application bootstrap flow, shared runtime
   - `ZipCodeService.java`
 - `studentmanagement.ui.student`
   - `StudentFormSupport.java`
+  - `StudentCreateView.java`
+  - `StudentEditView.java`
+  - `StudentShowView.java`
+  - `StudentUI.java`
 - `studentmanagement.ui.shell`
   - `AppWindowLauncher.java`
   - `MainMenuFactory.java`
@@ -71,7 +75,7 @@ The repository currently includes the application bootstrap flow, shared runtime
 - The instructor package now includes create, display, and edit workflows plus shared form support.
 - The course package now includes create, display, and edit workflows plus shared form support.
 - `ZipCodeService` provides ZIP-code lookup support for student workflows.
-- `StudentFormSupport` introduces the first student-specific validation and ZIP-handling logic.
+- The student package now includes create, display, and edit workflows plus shared ZIP-validation support.
 - The shell package currently provides the application window and menu structure.
 
 ## Dependencies
