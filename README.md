@@ -58,6 +58,8 @@ The repository currently includes the application bootstrap flow, shared runtime
   - `StudentEditView.java`
   - `StudentShowView.java`
   - `StudentUI.java`
+- `studentmanagement.ui.enrollment`
+  - `EnrollmentFormSupport.java`
 - `studentmanagement.ui.shell`
   - `AppWindowLauncher.java`
   - `MainMenuFactory.java`
@@ -76,6 +78,7 @@ The repository currently includes the application bootstrap flow, shared runtime
 - The course package now includes create, display, and edit workflows plus shared form support.
 - `ZipCodeService` provides ZIP-code lookup support for student workflows.
 - The student package now includes create, display, and edit workflows plus shared ZIP-validation support.
+- The enrollment package now includes the shared preview and lookup support layer used by upcoming enrollment screens.
 - The shell package currently provides the application window and menu structure.
 
 ## Dependencies
