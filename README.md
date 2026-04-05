@@ -4,7 +4,7 @@ A JavaFX-based desktop application for managing students, departments, instructo
 
 ## Current Project State
 
-The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, the initial JavaFX shell, shared UI utility classes, the full first-pass department feature set, the full first-pass instructor feature set, the full first-pass course feature set, the ZIP lookup service, and the full first-pass student feature set.
+The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, the initial JavaFX shell, shared UI utility classes, the full first-pass department feature set, the full first-pass instructor feature set, the full first-pass course feature set, the ZIP lookup service, the full first-pass student feature set, and the full first-pass enrollment feature set.
 
 ## Current Package Layout
 
@@ -78,7 +78,7 @@ The repository currently includes the application bootstrap flow, shared runtime
 - The course package now includes create, display, and edit workflows plus shared form support.
 - `ZipCodeService` provides ZIP-code lookup support for student workflows.
 - The student package now includes create, display, and edit workflows plus shared ZIP-validation support.
-- The enrollment package now includes the shared preview and lookup support layer used by upcoming enrollment screens.
+- The enrollment package now includes shared preview support plus create, display, and edit workflows.
 - The shell package currently provides the application window and menu structure.
 
 ## Dependencies
