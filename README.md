@@ -4,7 +4,7 @@ A JavaFX-based desktop application for managing students, departments, instructo
 
 ## Current Project State
 
-The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, the initial JavaFX shell, shared UI utility classes, the full first-pass department feature set, the full first-pass instructor feature set, the full first-pass course feature set, the ZIP lookup service, the full first-pass student feature set, and the full first-pass enrollment feature set.
+The repository currently includes the application bootstrap flow, shared runtime context, custom in-memory collection, core domain models, flat-file persistence handlers, the initial JavaFX shell, shared UI utility classes, the full first-pass department feature set, the full first-pass instructor feature set, the full first-pass course feature set, the ZIP lookup service, the full first-pass student feature set, the full first-pass enrollment feature set, and the reporting foundation utilities.
 
 ## Current Package Layout
 
@@ -60,6 +60,9 @@ The repository currently includes the application bootstrap flow, shared runtime
   - `StudentUI.java`
 - `studentmanagement.ui.enrollment`
   - `EnrollmentFormSupport.java`
+- `studentmanagement.ui.report`
+  - `ReportFieldFactory.java`
+  - `ReportResultsBuilder.java`
 - `studentmanagement.ui.shell`
   - `AppWindowLauncher.java`
   - `MainMenuFactory.java`
@@ -79,6 +82,7 @@ The repository currently includes the application bootstrap flow, shared runtime
 - `ZipCodeService` provides ZIP-code lookup support for student workflows.
 - The student package now includes create, display, and edit workflows plus shared ZIP-validation support.
 - The enrollment package now includes shared preview support plus create, display, and edit workflows.
+- The report package now includes the shared field factory and results builder used by the reporting layer.
 - The shell package currently provides the application window and menu structure.
 
 ## Dependencies
