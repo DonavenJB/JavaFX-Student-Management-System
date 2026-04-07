@@ -5,6 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import studentmanagement.app.AppContext;
+import studentmanagement.ui.shell.MainMenuFactory.MenuBundle;
 
 public final class AppWindowLauncher {
 
@@ -25,17 +26,10 @@ public final class AppWindowLauncher {
 
         MainMenuController.bind(primaryStage, borderPane, appContext, menuBundle);
 
-        Scene scene = new Scene(borderPane, WINDOW_WIDTH, WINDOW_HEIGHT);
+        Scene rootShell = new Scene(borderPane, WINDOW_WIDTH, WINDOW_HEIGHT);
 
         primaryStage.setTitle(WINDOW_TITLE);
-        primaryStage.setScene(scene);
+        primaryStage.setScene(rootShell);
         primaryStage.show();
-
-        System.out.println("Configured data files:");
-        System.out.println(" - " + appContext.getStudentsFile());
-        System.out.println(" - " + appContext.getCoursesFile());
-        System.out.println(" - " + appContext.getDepartmentsFile());
-        System.out.println(" - " + appContext.getInstructorsFile());
-        System.out.println(" - " + appContext.getEnrollmentsFile());
     }
 }
