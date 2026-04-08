@@ -1,0 +1,3 @@
+1001,John,Carter,123 Main St,Los Angeles,CA,90001
+1002,Sarah,Nguyen,456 Oak Ave,Burbank,CA,91502
+1003,Marcus,Reed,789 Pine Rd,Pasadena,CA,91101

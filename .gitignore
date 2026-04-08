@@ -15,12 +15,7 @@ Thumbs.db
 # Compiled Java
 *.class
 
-# Local runtime data files
-students.txt
-courses.txt
-departments.txt
-instructors.txt
-enrollments.txt
+
 
 # Local staging artifacts
 *.placeholder

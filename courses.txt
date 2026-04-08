@@ -1,0 +1,3 @@
+201,Data Structures,Study of linked lists trees and sorting,Computer Science,Ada Lovelace
+202,Discrete Math,Logic sets relations and proofs,Mathematics,Alan Turing
+203,Software Engineering,Design testing and maintenance practices,Computer Science,Grace Hopper
